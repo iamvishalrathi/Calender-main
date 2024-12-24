@@ -23,7 +23,9 @@
     color: #333;
 }
 
+/* Calendar Navigation Buttons */
 .calendar-navigation button {
+    margin: 0 10px;
     background-color: #4285f4;
     color: white;
     border: none;
@@ -73,6 +75,7 @@
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* Calendar Cell Hover and Today Styles */
 .calendar-cell:hover {
     background-color: #f1f1f1;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -82,6 +85,7 @@
     border: 2px solid #4285f4;
 }
 
+/* Day Number */
 .day-number {
     font-size: 18px;
     font-weight: 600;
@@ -101,6 +105,7 @@
     transition: transform 0.2s ease-in-out;
 }
 
+/* Event Hover and Active States */
 .event:hover {
     transform: scale(1.05);
 }
@@ -109,7 +114,7 @@
     transform: scale(0.98);
 }
 
-/* Event Colors */
+/* Event Types */
 .event[data-type='work'] {
     background-color: #4285f4;
 }
@@ -144,6 +149,7 @@
     color: #333;
 }
 
+/* Modal Input & Textarea */
 .event-modal input,
 .event-modal textarea {
     width: 100%;
@@ -154,6 +160,7 @@
     font-size: 16px;
 }
 
+/* Modal Button */
 .event-modal button {
     padding: 10px 15px;
     background-color: #34a853;
@@ -169,6 +176,7 @@
     background-color: #28a745;
 }
 
+/* Modal Close Button */
 .event-modal .close-btn {
     position: absolute;
     top: 10px;
@@ -195,4 +203,138 @@
 .modal-overlay.show {
     opacity: 1;
     visibility: visible;
+}
+
+/* Additional Calendar Styles */
+.calendar-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.weekday {
+    font-weight: bold;
+}
+
+/* Calendar Cells for Current and Other Months */
+.calendar-cell.current-month {
+    background-color: #fff;
+}
+
+.calendar-cell.other-month {
+    background-color: #f0f0f0;
+}
+
+.calendar-cell.selected {
+    background-color: #e0f7fa;
+    /* Highlight selected day */
+}
+
+.calendar-cell.weekend {
+    background-color: #f1f1f1;
+}
+
+/* Calendar Filter */
+.calendar-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-filter-input {
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.calendar-filter-input:focus {
+    border-color: #4285f4;
+}
+
+.calendar-filter-clear-button {
+    padding: 10px;
+    border-radius: 6px;
+    background: #ddd;
+    cursor: pointer;
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.calendar-filter-clear-button:hover {
+    background-color: #ccc;
+}
+
+.calendar-filter-result {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Alert Message */
+.alert-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 0.5s ease;
+}
+
+.alert-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f44336;
+    /* Red */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.alert-box button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.alert-box button:hover {
+    transform: scale(1.1);
+}
+
+/* Keyframe for alert fadeIn effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
