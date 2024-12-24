@@ -1,5 +1,5 @@
 <p align="center">
-	<em><code>❯ https://dynamic-calender-app.netlify.app/</code></em>
+    <em><code><a href="https://dynamic-calender-app.netlify.app/">❯ Live</a></code></em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/iamvishalrathi/Calender-main?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
