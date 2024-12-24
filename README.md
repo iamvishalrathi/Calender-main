@@ -30,17 +30,11 @@
 ---
 
 ## 📍 Overview
-
-<code> The **Dynamic Event Calendar Application** is designed to provide a seamless user experience for managing events. The application offers a dynamic calendar interface, allowing users to view, add, edit, and delete events with ease. Built using React.js, the application prioritizes user interactivity, intuitive design, and smooth navigation. It is structured to handle common calendar-related tasks such as scheduling events, adjusting times, and providing event descriptions—all within a responsive and modern interface. The application allows users to view their events for any given month, with easy navigation between months.
-
-</code>
+The **Dynamic Event Calendar Application** is designed to provide a seamless user experience for managing events. The application offers a dynamic calendar interface, allowing users to view, add, edit, and delete events with ease. Built using React.js, the application prioritizes user interactivity, intuitive design, and smooth navigation. It is structured to handle common calendar-related tasks such as scheduling events, adjusting times, and providing event descriptions—all within a responsive and modern interface. The application allows users to view their events for any given month, with easy navigation between months.
 
 ---
 
 ## 👾 Features
-
-<code>## **Features**
-
 ### 1. **Calendar View**
    - **Month Grid Display**: 
      - Displays a fully interactive calendar grid representing the current month.
@@ -86,7 +80,6 @@
      - Users can categorize events (e.g., "Meeting", "Personal", "Holiday") and color-code them for easier recognition.
    - **Multiple Views**:
      - Switch between daily, weekly, and monthly views for greater flexibility in event management.
-</code>
 
 ---
 
