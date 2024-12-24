@@ -1,4 +1,7 @@
 <p align="center">
+    <h1 align="center">Calender Management</h1>
+</p>
+<p align="center">
     <em><code><a href="https://dynamic-calender-app.netlify.app/">❯ Live</a></code></em>
 </p>
 <p align="center">
