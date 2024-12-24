@@ -1,0 +1,151 @@
+/* Modal Styling */
+.event-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+/* Modal content */
+.event-modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Modal Header */
+.event-modal h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Alert Box Styling */
+.MuiAlert-root {
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.event-modal input,
+.event-modal textarea,
+.event-modal select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.event-modal input[type="time"],
+.event-modal select {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+.event-modal textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Label Styling */
+.event-modal label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #555;
+    display: block;
+}
+
+/* Modal Actions Buttons */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-actions button:hover {
+    transform: translateY(-2px);
+}
+
+.modal-actions button:active {
+    transform: translateY(1px);
+}
+
+.modal-actions button:first-child {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.modal-actions button:first-child:hover {
+    background-color: #d32f2f;
+}
+
+.modal-actions button:nth-child(2) {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+}
+
+.modal-actions button:nth-child(2):hover {
+    background-color: #388e3c;
+}
+
+.modal-actions button:nth-child(3) {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+}
+
+.modal-actions button:nth-child(3):hover {
+    background-color: #357ae8;
+}
+
+/* Close Modal Button */
+.modal-actions button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .event-modal {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .event-modal input[type="time"],
+    .event-modal select {
+        width: 48%;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
